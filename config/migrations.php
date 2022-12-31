@@ -13,7 +13,7 @@ $connection = DriverManager::getConnection([
 
 $configuration = new Configuration($connection);
 
-$configuration->addMigrationsDirectory('Homevaller\SymfonyRoutes\Migrations', 'src/Migrations');
+$configuration->addMigrationsDirectory('FVCode\ConsoleWebApp\Migrations', 'src/Migrations');
 $configuration->setAllOrNothing(true);
 $configuration->setCheckDatabasePlatform(false);
 

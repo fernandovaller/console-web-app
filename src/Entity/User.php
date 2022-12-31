@@ -1,6 +1,6 @@
 <?php
 
-namespace Homevaller\SymfonyRoutes\Entity;
+namespace FVCode\ConsoleWebApp\Entity;
 
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;

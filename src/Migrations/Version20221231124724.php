@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Homevaller\SymfonyRoutes\Migrations;
+namespace FVCode\ConsoleWebApp\Migrations;
 
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\Migrations\AbstractMigration;

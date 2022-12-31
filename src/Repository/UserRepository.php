@@ -1,6 +1,6 @@
 <?php
 
-namespace Homevaller\SymfonyRoutes\Repository;
+namespace FVCode\ConsoleWebApp\Repository;
 
 /**
  * UserRepository

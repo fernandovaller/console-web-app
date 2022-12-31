@@ -1,8 +1,8 @@
 {
-    "name": "homevaller/symfony-routes",
+    "name": "fernandovaller/console-web-app",
     "autoload": {
         "psr-4": {
-            "Homevaller\\SymfonyRoutes\\": "src/"
+            "FVCode\\ConsoleWebApp\\": "src/"
         }
     },
     "authors": [
