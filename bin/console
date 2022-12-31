@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+use Doctrine\ORM\Tools\Console\ConsoleRunner;
+
+//use Doctrine\DBAL\Migrations\Tools\Console\ConsoleRunner as MigrationsConsoleRunner;
+use Doctrine\Migrations\Tools\Console\ConsoleRunner as ConsoleRunnerMigrations;
+
+require __DIR__ . '/../bootstrap.php';
+
+$application = new Application();
+$application->setCatchExceptions(true);
+
+$dependencyFactory = require __DIR__ . '/../config/migrations.php';
+ConsoleRunnerMigrations::addCommands($application, $dependencyFactory);
+
+$entityManager = require __DIR__ . '/../config/entity.php';
+$helperSet = ConsoleRunner::createHelperSet($entityManager);
+$application->setHelperSet($helperSet);
+ConsoleRunner::addCommands($application);
+
+$application->run();
